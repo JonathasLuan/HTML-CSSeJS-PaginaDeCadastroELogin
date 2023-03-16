@@ -1,0 +1,37 @@
+1. Criar seção de formulários
+2. Criar divisão
+3. Colocar dois botões lado a lado
+4. Colocar um fomulário em cadab um
+5. Fazer com que fiquem ocultos
+6. Fazer com que apareça um formulário quando o respectivo butão for apertado.
+
+<div id="formulario-container">
+  <!-- aqui vão os botões e formulários -->
+<button id="botao-formulario-1">Formulário 1</button>
+<button id="botao-formulario-2">Formulário 2</button>
+
+<form id="formulario-1" style="display: none;">
+  <!-- campos do formulário 1 -->
+</form>
+
+<form id="formulario-2" style="display: none;">
+  <!-- campos do formulário 2 -->
+</form>
+
+</div>
+
+
+const botaoFormulario1 = document.getElementById("botao-formulario-1");
+const botaoFormulario2 = document.getElementById("botao-formulario-2");
+const formulario1 = document.getElementById("formulario-1");
+const formulario2 = document.getElementById("formulario-2");
+
+botaoFormulario1.addEventListener("click", () => {
+  formulario1.style.display = "block";
+  formulario2.style.display = "none";
+});
+
+botaoFormulario2.addEventListener("click", () => {
+  formulario1.style.display = "none";
+  formulario2.style.display = "block";
+});

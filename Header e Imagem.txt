@@ -1,0 +1,16 @@
+HTML:
+
+      <header>
+        <h1>Título da Página Principal</h1>
+        <img id="imagem" src="imagem.png" alt="imagem">
+      </header>
+
+CSS:
+
+#imagem {
+    margin-left: 0%;
+    max-width:450px;
+    max-height:400px;
+    width: auto;
+    height: auto;
+} 
