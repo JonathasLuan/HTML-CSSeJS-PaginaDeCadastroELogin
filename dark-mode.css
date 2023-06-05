@@ -63,6 +63,10 @@ input:checked+.slider:before {
     color: rgb(255, 255, 255);
 }
 
+body.dark-mode * {
+    box-shadow: none;
+}
+
 body.dark-mode main {
     background-color: rgb(53, 53, 53);
     color: white;
@@ -150,6 +154,18 @@ body.dark-mode .chat-item:hover {
     border: #888;
 }
 
+body.dark-mode .agend-item {
+    background-color: #373b3d;
+    color: #fafafa;
+    border: #888;
+}
+
+body.dark-mode .agend-item:hover {
+    background-color: #4e5052;
+    color: #fafafa;
+    border: #888;
+}
+
 body.dark-mode #botoes button:hover {
     background-color: #51b4f1;
     color: #fafafa;
@@ -165,7 +181,7 @@ body.dark-mode #menu-chat button:hover {
 body.dark-mode #menu-chat {
     background-color: #000;
     color: white;
-    border-color: gray;
+    border-color: rgb(53, 53, 53);
 }
 
 body.dark-mode #menu-chat button,
@@ -174,7 +190,12 @@ body.dark-mode .btn-dropdown-child,
 body.dark-mode input,
 body.dark-mode .modal-inner,
 body.dark-mode header,
-body.dark-mode .modal-content {
+body.dark-mode .modal-content,
+body.dark-mode #contactform,
+body.dark-mode #sobreprojeto,
+body.dark-mode #sobreperfil,
+body.dark-mode #editsobre,
+body.dark-mode #navbar ul li a {
     background-color: #000;
     color: white;
 }
@@ -183,6 +204,7 @@ body.dark-mode #menu-content {
     background-color: #000;
     color: white;
     border-color: gray;
+    border-bottom: 1px solid grey;
 }
 
 body.dark-mode a {
@@ -240,4 +262,8 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover {
 
 body.dark-mode ::-webkit-scrollbar-thumb {
     background: #aaa;
+}
+
+body.dark-mode #navbar li a:hover {
+    background-color: rgb(53, 53, 53);
 }
