@@ -58,7 +58,6 @@ label {
 }
 
 label {
-  display: block;
   margin-bottom: 10px;
   font-size: 15px;
 }
@@ -179,4 +178,13 @@ a:hover {
   background: none;
   border: none;
   font-weight: bold;
+}
+
+footer {
+  display: none;
+}
+
+#myBtn:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
